@@ -33,7 +33,7 @@ router.get('/', async(req,res)=>{
 })
 
 
-
+// tabtabitabtabtabitab
 router.get('/:taste',async(req,res)=>{
     try{
        const tasteType=await req.params.tasteType;
