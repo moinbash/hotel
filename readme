@@ -1,0 +1,12 @@
+git init
+git add .
+git status
+git commit -m "Server"
+git remote add origin https://github.com/moinbash/hotel.git
+git branch -M main
+git push -u origin main
+
+1) if we add some code in the server.js file(any file) , if we want to see the updated file in the github is by command (git push).Before we need to add file(git add .) and commit as (git commit -m "second_server").
+
+2) get push - modifying the existing file(in vscode) is shown in the github.
+3) get pull - modifying the existing file(in github) is shown in the vscode.

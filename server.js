@@ -23,6 +23,6 @@ app.use('/menu',response2);
 app.get('/',(req,res)=>{
   res.send("hello");
 })
-app.listen(3001, () => {
+app.listen(3000, () => {
   console.log(`http://localhost:3001`);
 });
