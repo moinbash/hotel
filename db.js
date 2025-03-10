@@ -24,6 +24,8 @@ db.on('disconnected',()=>{
     console.log("Error");
  })
 
+//  Hi databse is exported
+
  module.exports=db;
  
   
