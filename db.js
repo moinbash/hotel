@@ -1,12 +1,11 @@
 
 const mongoose=require('mongoose');
 
-const mongoURL='mongodb://localhost:27017/mydatabase';
+// const mongoURL='mongodb://localhost:27017/mydatabase';
+const mongoURL='mongodb+srv://shaikmoinbasha44:Qwerty123456@cluster56.bkf0e.mongodb.net/'
 
-mongoose.connect(mongoURL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+
+mongoose.connect(mongoURL);
 
 const db=mongoose.connection;
 

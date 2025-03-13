@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const db = require('./db');
+require('dotenv').config();
 const People = require('./models/People');
 
 const Menu = require('./models/Menu');
@@ -24,7 +25,9 @@ app.get('/',(req,res)=>{
   res.send("hello");
 })
 
-// Hi listen this is app.listen().
-app.listen(3000, () => {
-  console.log(`http://localhost:3001`);
+// Hi listen this is app.listen().Y
+
+const PORT=process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`http://localhost:3000`);
 });
